@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<title>Puddle Cat</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-grey.css">
+<script src="https://kit.fontawesome.com/888fff7a81.js" crossorigin="anonymous"></script>
+
+<style media="screen">
+
+.column-gap {
+  grid-column-gap: 50px;
+}
+#grad1 {
+  background-image: linear-gradient(#607d8b, #5D8D69);
+}
+
+/*Gradient Colors
+#607d8b
+#55828c
+#4d8687
+#4c8a7e
+#528c75
+#5D8D69
+*/
+
+.container-shadow  {
+  box-shadow:6px 6px 5px 3px rgba(0,0,0,0.5)
+}
+
+.color-green-grey {
+  background-color: #5D8D69;
+  box-sh
+}
+
+</style>
+
+<body>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div id="myNavbar" class="w3-bar w3-blue-grey w3-text-light-grey">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#about" class="w3-bar-item w3-button"><i class="fas fa-male w3-padding-small"></i>About</a>
+    <a href="#skills" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-certificate w3-padding-small"></i>Skills</a>
+    <a href="#experience" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-briefcase w3-padding-small"></i>Experience</a>
+    <a href="#education" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-book w3-padding-small"></i>Education</a>
+    <a href="contact" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-phone w3-padding-small"></i>Contact</a>
+  </div>
+ <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-blue-grey w3-text-light-grey w3-hide w3-hide-large w3-hide-medium">
+    <a href="#skills" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fas fa-certificate w3-padding-small"></i>Skills</a>
+    <a href="#experience" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fas fa-briefcase w3-padding-small"></i>Experience</a>
+    <a href="#education" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fas fa-book w3-padding-small"></i>Education</a>
+    <a href="contact" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fas fa-phone w3-padding-small"></i>Contact</a>
+  </div>
+</div>
+<br>
+
+<div class="w3-container w3-black w3-center w3-animate-opacity w3-padding-large w3-text-light-grey">
+  <h1><i class="fas fa-grip-lines w3-padding-small"></i>Puddle Cat<i class="fas fa-grip-lines w3-padding-small"></i></h1>
+</div>
+
+<!-- Open container for background gradient -->
+<div id="grad1" class="w3-container">
+
+  <!-- Start of Row 1 -->
+  <div class="w3-row">
+    <div id="about" class="w3-half w3-container" style="height:700px">
+      <div class="container-shadow w3-padding-large w3-center w3-animate-left w3-theme-l3 w3-margin-top w3-round" style="height:95%">
+        <h2><span class="w3-tag w3-blue-grey w3-round w3-text-light-grey">About</span></h2>
+        <img src="pudd_necktie.png" class="w3-margin w3-circle w3-border w3-border-black w3-topbar w3-bottombar w3-leftbar w3-rightbar" alt="Puddle Cat" style="width:35%">
+        <div class="w3-left-align w3-padding-large">
+          <p>Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+          </p>
+          <p>Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="skills" class="w3-half w3-container" style="height:700px">
+      <div class="container-shadow w3-padding-large w3-center w3-animate-right w3-theme-l3 w3-margin-top w3-round" style="height:95%">
+        <h2><span class="w3-tag w3-blue-grey w3-round w3-text-light-grey">Skills</span></h2>
+        <div class="w3-container w3-responsive w3-padding">
+          <table class="w3-table w3-centered">
+            <caption class="w3-padding"><b>Technical</b></caption>
+            <tr style="border-bottom: 1px solid grey;">
+              <td>HTML & CSS</td>
+            </tr>
+            <tr style="border-bottom: 1px solid grey;">
+              <td>Javascript</td>
+            </tr>
+            <tr style="border-bottom: 1px solid grey;">
+              <td>C++</td>
+            </tr>
+            <tr style="border-bottom: 1px solid grey;">
+              <td>Java</td>
+            </tr>
+            <tr style="border-bottom: 1px solid grey;">
+              <td>Linux</td>
+            </tr>
+          </table>
+          <br>
+          <br>
+          <table class="w3-table w3-centered">
+            <caption class="w3-padding"><b>Language</b></caption>
+            <tr style="border-bottom: 1px solid grey;">
+              <td>English</td>
+            </tr>
+            <tr style="border-bottom: 1px solid grey;">
+              <td>Japanese</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  <!-- End of Row 1 -->
+
+  <!-- Start of Row 2 -->
+  <div class="w3-row">
+    <div id="experience" class="w3-half w3-container" style="height:700px">
+      <div class="container-shadow w3-padding-large w3-center w3-animate-left w3-theme-l3 w3-margin-top w3-round" style="height:95%">
+        <h2><span class="w3-tag w3-blue-grey w3-round w3-text-light-grey">Experience</span></h2>
+        <br>
+        <div class="w3-container w3-theme-l2">
+          <h5 class="w3-opacity"><b>Assistant Studio Manager</b></h5>
+          <h6 class="w3-opacity"><b>Richard's Guitar Studio</b></h6>
+          <h6 class=""><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015 - 2020</h6>
+        </div>
+        <br>
+        <div class="w3-container w3-theme-l2">
+          <h5 class="w3-opacity"><b>Technical Support</b></h5>
+          <h6 class="w3-opacity"><b>3Gtms</b></h6>
+          <h6 class=""><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2014</h6>
+        </div>
+        <br>
+        <div class="w3-container w3-theme-l2">
+          <h5 class="w3-opacity"><b>Service Desk Analyst II</b></h5>
+          <h6 class="w3-opacity"><b>TMNAS</b></h6>
+          <h6 class=""><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013</h6>
+        </div>
+
+        <!--<table class="w3-table">
+          <caption class="w3-padding"><b>Work</b></caption>
+          <tr style="border-bottom: 1px solid grey;">
+            <th>When</th>
+            <th>What</th>
+            <th>Where</th>
+          </tr>
+          <tr style="border-bottom: 1px solid grey;">
+            <td>2015-2020</td>
+            <td>Assistant Manager</td>
+            <td>Richard's Guitar Studio</td>
+          </tr>
+          <tr style="border-bottom: 1px solid grey;">
+            <td>2013-2014</td>
+            <td>Technical Support</td>
+            <td>3Gtms</td>
+          </tr>
+          <tr style="border-bottom: 1px solid grey;">
+            <td>2010-2013</td>
+            <td>Service Desk Analyst II</td>
+            <td>TMNA Services</td>
+          </tr>
+        </table>-->
+      </div>
+    </div>
+
+    <div id="education" class="w3-half w3-container" style="height:700px">
+      <div class="container-shadow w3-padding-large w3-center w3-animate-left w3-theme-l3 w3-margin-top w3-round" style="height:95%">
+        <h2><span class="w3-tag w3-blue-grey w3-round w3-text-light-grey">Education</span></h2>
+        <br>
+        <div class="w3-container w3-theme-l2">
+          <h5 class="w3-opacity"><b>Bachelor of Science: Software Development</b></h5>
+          <h6 class="w3-opacity"><b>Western Governor's University</b></h6>
+          <h6 class=""><i class="fa fa-calendar fa-fw w3-margin-right"></i>2021</h6>
+        </div>
+        <br>
+        <div class="w3-container w3-theme-l2">
+          <h5 class="w3-opacity"><b>Associate of Applied Science: Computer Network Engineering</b></h5>
+          <h6 class="w3-opacity"><b>Delaware County Community College</b></h6>
+          <h6 class=""><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010</h6>
+        </div>
+        <!--
+        <div class="w3-container w3-responsive">
+          <table class="w3-table">
+            <caption class="w3-padding"><b>School</b></caption>
+            <tr style="border-bottom: 1px solid grey;">
+              <th>When</th>
+              <th>What</th>
+              <th>Where</th>
+            </tr>
+            <tr style="border-bottom: 1px solid grey;">
+              <td>2021</td>
+              <td>Bachelor of Science: Software Development</td>
+              <td>Western Governors University</td>
+            </tr>
+            <tr style="border-bottom: 1px solid grey;">
+              <td>2010</td>
+              <td>Associate of Applied Science: Computer Network Engineering</td>
+              <td>Delaware County Community College</td>
+            </tr>
+          </table>
+          <br>
+          <table class="w3-table w3-centered">
+            <caption class="w3-padding"><b>Certifications</b></caption>
+            <tr style="border-bottom: 1px solid grey;">
+              <td>User Interface Design</td>
+            </tr>
+          </table>
+        </div>
+        -->
+      </div>
+    </div>
+
+<!--
+    <div id="education" class="w3-half w3-container" style="height:700px">
+      <div class="container-shadow w3-padding-large w3-center w3-animate-right w3-theme-l3 w3-margin-top w3-round" style="height:95%">
+        <h2><span class="w3-tag w3-blue-grey w3-round w3-text-light-grey">Education</span></h2>
+        <div class="">
+          <ul class="w3-ul w3-center w3-hoverable">
+            <li>Eating Biscuits</li>
+            <li>Spilling Biscuits</li>
+            <li>Chasing Biscuits</li>
+            <li>Wasting Biscuits</li>
+            <li>Biscuit Frameworks</li>
+            <li>BHTML (The B stands for BISCUITS)</li>
+            <li>BHTML (The B stands for BISCUITS)</li>
+            <li>BHTML (The B stands for BISCUITS)</li>
+            <li>BHTML (The B stands for BISCUITS)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+-->
+  <!-- End of Row 2 -->
+
+  <!-- Start of Row 3 -->
+  <div class="w3-row">
+    <div id="contact" class="w3-half w3-container" style="height:700px">
+      <div class="container-shadow w3-padding-large w3-center w3-animate-left w3-theme-l3 w3-margin-top w3-round" style="height:95%">
+        <h2><span class="w3-tag w3-blue-grey w3-round w3-text-light-grey">Contact</span></h2>
+        <div class="w3-left-align w3-padding-large">
+          <p>Contact Me</p>
+          <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?">
+            <input class="w3-input w3-border" type="name" placeholder="Name" required name="Name">
+            <input class="w3-input w3-section w3-border" type="email" placeholder="Email" required name="Email">
+            <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
+            <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
+            <button class="w3-button w3-black w3-section" type="submit">
+              <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="" class="w3-half w3-container" style="height:700px">
+      <div class="container-shadow w3-padding-large w3-center w3-animate-right w3-theme-l3 w3-margin-top w3-round" style="height:95%">
+        <h2><span class="w3-tag w3-blue-grey w3-round w3-text-light-grey">Image?</span></h2>
+      </div>
+    </div>
+  </div>
+  <!-- End of Row 3 -->
+
+<!-- Close container for background gradient -->
+</div>
+
+<div class="w3-container w3-black w3-text-light-grey">
+  <p>My footer information</p>
+</div>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
