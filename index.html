@@ -47,7 +47,7 @@
     <a href="#skills" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-certificate w3-padding-small"></i>Skills</a>
     <a href="#experience" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-briefcase w3-padding-small"></i>Experience</a>
     <a href="#education" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-book w3-padding-small"></i>Education</a>
-    <a href="contact" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-phone w3-padding-small"></i>Contact</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-phone w3-padding-small"></i>Contact</a>
   </div>
  <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-blue-grey w3-text-light-grey w3-hide w3-hide-large w3-hide-medium">
@@ -68,7 +68,7 @@
 
   <!-- Start of Row 1 -->
   <div class="w3-row">
-    <div id="about" class="w3-half w3-container" style="height:700px">
+    <div id="about" class="w3-col s12 m12 l6 w3-container" style="height:700px">
       <div class="container-shadow w3-padding-large w3-center w3-animate-left w3-theme-l3 w3-margin-top w3-round" style="height:95%">
         <h2><span class="w3-tag w3-blue-grey w3-round w3-text-light-grey">About</span></h2>
         <img src="pudd_necktie.png" class="w3-margin w3-circle w3-border w3-border-black w3-topbar w3-bottombar w3-leftbar w3-rightbar" alt="Puddle Cat" style="width:35%">
@@ -81,7 +81,7 @@
       </div>
     </div>
 
-    <div id="skills" class="w3-half w3-container" style="height:700px">
+    <div id="skills" class="w3-col s12 m12 l6 w3-container" style="height:700px">
       <div class="container-shadow w3-padding-large w3-center w3-animate-right w3-theme-l3 w3-margin-top w3-round" style="height:95%">
         <h2><span class="w3-tag w3-blue-grey w3-round w3-text-light-grey">Skills</span></h2>
         <div class="w3-container w3-responsive w3-padding">
@@ -121,11 +121,18 @@
 
   <!-- Start of Row 2 -->
   <div class="w3-row">
-    <div id="experience" class="w3-half w3-container" style="height:700px">
+    <div id="experience" class="w3-col s12 m12 l6 w3-container" style="height:700px">
       <div class="container-shadow w3-padding-large w3-center w3-animate-left w3-theme-l3 w3-margin-top w3-round" style="height:95%">
         <h2><span class="w3-tag w3-blue-grey w3-round w3-text-light-grey">Experience</span></h2>
         <br>
-        <div class="w3-container w3-theme-l2">
+        <div class="w3-container">
+          <button onclick="accordionFunction('Experience1')" class="w3-btn w3-block w3-black w3-left-align">Open Section 1</button>
+          <div id="Experience1" class="w3-container w3-hide">
+            <h4>Section 1</h4>
+            <p>Some text..</p>
+          </div>
+        </div>
+        <!--<div class="w3-container w3-theme-l2">
           <h5 class="w3-opacity"><b>Assistant Studio Manager</b></h5>
           <h6 class="w3-opacity"><b>Richard's Guitar Studio</b></h6>
           <h6 class=""><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015 - 2020</h6>
@@ -141,7 +148,7 @@
           <h5 class="w3-opacity"><b>Service Desk Analyst II</b></h5>
           <h6 class="w3-opacity"><b>TMNAS</b></h6>
           <h6 class=""><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013</h6>
-        </div>
+        </div>-->
 
         <!--<table class="w3-table">
           <caption class="w3-padding"><b>Work</b></caption>
@@ -169,7 +176,7 @@
       </div>
     </div>
 
-    <div id="education" class="w3-half w3-container" style="height:700px">
+    <div id="education" class="w3-col s12 m12 l6 w3-container" style="height:700px">
       <div class="container-shadow w3-padding-large w3-center w3-animate-left w3-theme-l3 w3-margin-top w3-round" style="height:95%">
         <h2><span class="w3-tag w3-blue-grey w3-round w3-text-light-grey">Education</span></h2>
         <br>
@@ -217,7 +224,7 @@
     </div>
 
 <!--
-    <div id="education" class="w3-half w3-container" style="height:700px">
+    <div id="education" class="w3-col s12 m12 l6 w3-container" style="height:700px">
       <div class="container-shadow w3-padding-large w3-center w3-animate-right w3-theme-l3 w3-margin-top w3-round" style="height:95%">
         <h2><span class="w3-tag w3-blue-grey w3-round w3-text-light-grey">Education</span></h2>
         <div class="">
@@ -241,25 +248,38 @@
 
   <!-- Start of Row 3 -->
   <div class="w3-row">
-    <div id="contact" class="w3-half w3-container" style="height:700px">
+    <div id="contact" class="w3-col s12 m12 l6 w3-container" style="height:700px">
       <div class="container-shadow w3-padding-large w3-center w3-animate-left w3-theme-l3 w3-margin-top w3-round" style="height:95%">
         <h2><span class="w3-tag w3-blue-grey w3-round w3-text-light-grey">Contact</span></h2>
         <div class="w3-left-align w3-padding-large">
-          <p>Contact Me</p>
-          <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?">
-            <input class="w3-input w3-border" type="name" placeholder="Name" required name="Name">
-            <input class="w3-input w3-section w3-border" type="email" placeholder="Email" required name="Email">
-            <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
-            <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
-            <button class="w3-button w3-black w3-section" type="submit">
-              <i class="fa fa-paper-plane"></i> SEND MESSAGE
-            </button>
-          </form>
+          <table class="w3-table w3-centered">
+            <tr style="border-bottom: 1px solid grey;">
+              <td class="w3-padding-16"><i class="fas fa-phone w3-padding"></i>(610) 551-0794</td>
+            </tr>
+            <tr style="border-bottom: 1px solid grey;">
+              <td class="w3-padding-16"><i class="far fa-envelope w3-padding"></i>eric.matelyan@gmail.com</td>
+            </tr>
+            <tr style="border-bottom: 1px solid grey;">
+              <td><a class="w3-button w3-large" href="https://www.linkedin.com/in/eric-m-1a67151b2/"><i class="fab fa-linkedin-square w3-padding"></i>LinkedIn</a></td>
+            </tr>
+            <tr style="border-bottom: 1px solid grey;">
+              <td><a class="w3-button w3-large" href="https://github.com/samurainstein"><i class="fab fa-github-square w3-padding"></i>Github</a></td>
+            </tr>
+            <tr style="border-bottom: 1px solid grey;">
+              <td><a class="w3-button w3-large" href="https://www.facebook.com/eric.matelyan/"><i class="fab fa-facebook w3-padding"></i>Facebook</a></td>
+            </tr>
+            <tr style="border-bottom: 1px solid grey;">
+              <td><a class="w3-button w3-large" href="https://www.instagram.com/samurainstein/"><i class="fab fa-instagram w3-padding"></i>Instagram</a></td>
+            </tr>
+            <tr style="border-bottom: 1px solid grey;">
+              <td><a class="w3-button w3-large" href="https://www.youtube.com/channel/UCeYIRlCrKAuIGdPpAkGXfPA"><i class="fab fa-youtube w3-padding"></i>Youtube</a></td>
+            </tr>
+          </table>
         </div>
       </div>
     </div>
 
-    <div id="" class="w3-half w3-container" style="height:700px">
+    <div id="" class="w3-col s12 m12 l6 w3-container" style="height:700px">
       <div class="container-shadow w3-padding-large w3-center w3-animate-right w3-theme-l3 w3-margin-top w3-round" style="height:95%">
         <h2><span class="w3-tag w3-blue-grey w3-round w3-text-light-grey">Image?</span></h2>
       </div>
@@ -283,6 +303,19 @@ function toggleFunction() {
     } else {
         x.className = x.className.replace(" w3-show", "");
     }
+}
+</script>
+
+
+<script>
+// Used to toggle accordion menu on experience page
+function accordionFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
 }
 </script>
 
