@@ -70,7 +70,7 @@
   <div class="w3-row">
     <div id="about" class="w3-col s12 m12 l6 w3-container" style="height:700px">
       <div class="container-shadow w3-padding-large w3-center w3-animate-left w3-theme-l3 w3-margin-top w3-round" style="height:95%">
-        <h2><span class="w3-tag w3-blue-grey w3-round w3-text-light-grey">About</span></h2>
+        <h2><span class="w3-block w3-tag w3-blue-grey w3-round w3-text-light-grey">About</span></h2>
         <img src="pudd_necktie.png" class="w3-margin w3-circle w3-border w3-border-black w3-topbar w3-bottombar w3-leftbar w3-rightbar" alt="Puddle Cat" style="width:35%">
         <div class="w3-left-align w3-padding-large">
           <p>Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
@@ -83,7 +83,7 @@
 
     <div id="skills" class="w3-col s12 m12 l6 w3-container" style="height:700px">
       <div class="container-shadow w3-padding-large w3-center w3-animate-right w3-theme-l3 w3-margin-top w3-round" style="height:95%">
-        <h2><span class="w3-tag w3-blue-grey w3-round w3-text-light-grey">Skills</span></h2>
+        <h2><span class="w3-block w3-tag w3-blue-grey w3-round w3-text-light-grey">Skills</span></h2>
         <div class="w3-container w3-responsive w3-padding">
           <table class="w3-table w3-centered">
             <caption class="w3-padding"><b>Technical</b></caption>
@@ -123,32 +123,58 @@
   <div class="w3-row">
     <div id="experience" class="w3-col s12 m12 l6 w3-container" style="height:700px">
       <div class="container-shadow w3-padding-large w3-center w3-animate-left w3-theme-l3 w3-margin-top w3-round" style="height:95%">
-        <h2><span class="w3-tag w3-blue-grey w3-round w3-text-light-grey">Experience</span></h2>
+        <h2><span class="w3-block w3-tag w3-blue-grey w3-round w3-text-light-grey">Experience</span></h2>
         <br>
-        <div class="w3-container">
-          <button onclick="accordionFunction('Experience1')" class="w3-btn w3-block w3-black w3-left-align">Open Section 1</button>
+
+        <!--<div class="w3-container">
+          <button onclick="accordionOpen1('Experience1'); accordionClose2('Experience2'); accordionClose3('Experience3');" class="w3-btn w3-block w3-black w3-left-align">Open Section 1</button>
           <div id="Experience1" class="w3-container w3-hide">
             <h4>Section 1</h4>
             <p>Some text..</p>
           </div>
         </div>
-        <!--<div class="w3-container w3-theme-l2">
+        <div class="w3-container">
+          <button onclick="accordionOpen2('Experience2'); accordionClose1('Experience1'); accordionClose3('Experience3');" class="w3-btn w3-block w3-black w3-left-align">Open Section 1</button>
+          <div id="Experience2" class="w3-container w3-hide">
+            <h4>Section 2</h4>
+            <p>Some text..</p>
+          </div>
+        </div>
+        <div class="w3-container">
+          <button onclick="accordionOpen3('Experience3'); accordionClose1('Experience1'); accordionClose2('Experience2');" class="w3-btn w3-block w3-black w3-left-align">Open Section 1</button>
+          <div id="Experience3" class="w3-container w3-hide">
+            <h4>Section 3</h4>
+            <p>Some text..</p>
+          </div>
+        </div>
+      -->
+
+        <div class="w3-container w3-theme-l2">
           <h5 class="w3-opacity"><b>Assistant Studio Manager</b></h5>
           <h6 class="w3-opacity"><b>Richard's Guitar Studio</b></h6>
-          <h6 class=""><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015 - 2020</h6>
+          <h6 class=""><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015 - 2020<button onclick="accordionOpen1('Experience1'); accordionClose2('Experience2'); accordionClose3('Experience3');" class="w3-right w3-theme-l2"><i class="fas fa-caret-down w3-theme-l2"></i></button></h6>
+            <div id="Experience1" class="w3-container w3-hide">
+              <p>Worked alongside the studio owner, handling various tasks of small business management, including event planning, documentation, scheduling, organization, hiring staff, etc.</p>
+            </div>
         </div>
         <br>
         <div class="w3-container w3-theme-l2">
           <h5 class="w3-opacity"><b>Technical Support</b></h5>
           <h6 class="w3-opacity"><b>3Gtms</b></h6>
-          <h6 class=""><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2014</h6>
+          <h6 class=""><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2014<button onclick="accordionOpen2('Experience2'); accordionClose1('Experience1'); accordionClose3('Experience3');" class="w3-right w3-theme-l2"><i class="fas fa-caret-down w3-theme-l2"></i></button></h6>
+            <div id="Experience2" class="w3-container w3-hide">
+              <p>Part of a small tech support team for a startup company. Aided with setting up computer hardware and software, creating SOP documentation, and providing technical support to local and remote offices.</p>
+            </div>
         </div>
         <br>
         <div class="w3-container w3-theme-l2">
           <h5 class="w3-opacity"><b>Service Desk Analyst II</b></h5>
           <h6 class="w3-opacity"><b>TMNAS</b></h6>
-          <h6 class=""><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013</h6>
-        </div>-->
+          <h6 class=""><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013<button onclick="accordionOpen3('Experience3'); accordionClose1('Experience1'); accordionClose2('Experience2');" class="w3-right w3-theme-l2"><i class="fas fa-caret-down w3-theme-l2"></i></button></h6>
+          <div id="Experience3" class="w3-container w3-hide">
+            <p>Level 2 tech support for an international company. Created technical and SOP documentation to be used across the Service Desk team. Use of ticketing system to enter data for ongoing issues and resolved cases.</p>
+          </div>
+        </div>
 
         <!--<table class="w3-table">
           <caption class="w3-padding"><b>Work</b></caption>
@@ -178,7 +204,7 @@
 
     <div id="education" class="w3-col s12 m12 l6 w3-container" style="height:700px">
       <div class="container-shadow w3-padding-large w3-center w3-animate-left w3-theme-l3 w3-margin-top w3-round" style="height:95%">
-        <h2><span class="w3-tag w3-blue-grey w3-round w3-text-light-grey">Education</span></h2>
+        <h2><span class="w3-block w3-tag w3-blue-grey w3-round w3-text-light-grey">Education</span></h2>
         <br>
         <div class="w3-container w3-theme-l2">
           <h5 class="w3-opacity"><b>Bachelor of Science: Software Development</b></h5>
@@ -250,7 +276,7 @@
   <div class="w3-row">
     <div id="contact" class="w3-col s12 m12 l6 w3-container" style="height:700px">
       <div class="container-shadow w3-padding-large w3-center w3-animate-left w3-theme-l3 w3-margin-top w3-round" style="height:95%">
-        <h2><span class="w3-tag w3-blue-grey w3-round w3-text-light-grey">Contact</span></h2>
+        <h2><span class="w3-block w3-tag w3-blue-grey w3-round w3-text-light-grey">Contact</span></h2>
         <div class="w3-left-align w3-padding-large">
           <table class="w3-table w3-centered">
             <tr style="border-bottom: 1px solid grey;">
@@ -281,7 +307,7 @@
 
     <div id="" class="w3-col s12 m12 l6 w3-container" style="height:700px">
       <div class="container-shadow w3-padding-large w3-center w3-animate-right w3-theme-l3 w3-margin-top w3-round" style="height:95%">
-        <h2><span class="w3-tag w3-blue-grey w3-round w3-text-light-grey">Image?</span></h2>
+        <h2><span class="w3-block w3-tag w3-blue-grey w3-round w3-text-light-grey">Image?</span></h2>
       </div>
     </div>
   </div>
@@ -304,18 +330,50 @@ function toggleFunction() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
-</script>
 
-
-<script>
 // Used to toggle accordion menu on experience page
-function accordionFunction(id) {
+function accordionOpen1(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// Used to toggle accordion menu on experience page
+function accordionOpen2(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// Used to toggle accordion menu on experience page
+function accordionOpen3(id) {
   var x = document.getElementById(id);
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
   } else {
     x.className = x.className.replace(" w3-show", "");
   }
+}
+
+function accordionClose1(id) {
+    var x = document.getElementById(id);
+    x.className = x.className.replace(" w3-show", "");
+}
+
+function accordionClose2(id) {
+    var x = document.getElementById(id);
+    x.className = x.className.replace(" w3-show", "");
+}
+
+function accordionClose3(id) {
+    var x = document.getElementById(id);
+    x.className = x.className.replace(" w3-show", "");
 }
 </script>
 
